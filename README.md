@@ -44,3 +44,32 @@
 
       df.mode(axis=1) calculated mode over rows
       
+# different function of a data object
+
+1.  head()  -- head(3)
+2.  tail()
+3. values() - // return series of the array 
+4. groupby() - //print(df.groupby(['Team', 'Rank']).groups)
+5. Concatenation -- join two or more datastructures  
+print(pandas.concat([df1,df2], axis=1) )
+6. Merging --> need to have a common column between two or more datasets or tables.
+print(pandas.merge(df1,df2, on='Team'))
+
+            1. Left join print(pandas.merge(df1,df2, on='Team', how='left'))
+            2. right join print(pandas.merge(df1,df2, on='Team', how='right'))
+            3. inner join : selects all rows from both table if matching between columns 
+            Left join print(pandas.merge(df1,df2, on='Team', how='inner')) // returns null if no match
+            4. full outer join -- retrun all when there is a match in left or right
+            
+  # Type casting 
+      string()
+      int()
+      float()
+      implicit --> happens without effor or code 
+      Explicit  --> reuse code or DRY programming 
+      
+      
+  
+            
+            
+      
